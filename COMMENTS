@@ -14,9 +14,11 @@ This is also how the tests are run, with the very basic examples in test_zips.cs
 
   ruby calc_slscp.rb test_zips.csv test_plans.csv > test_results.csv
 
-The only result should be for zip 12345 of rate 200.
+The only results should be:
+   12345: 200 (one rate area with several silver plans)
+   56789: 100 (duplicate rate areas with several silver plans)
 
-The others should fail for the following:
+The others should be empty for the following reasons:
 
   23456: Ambiguous plan areas (covers 1 and 2 in test_zips.csv)
   34567: Only Bronze plan listed
