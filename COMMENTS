@@ -23,3 +23,12 @@ The others should be empty for the following reasons:
   23456: Ambiguous plan areas (covers 1 and 2 in test_zips.csv)
   34567: Only Bronze plan listed
   45678: Only one Silver plan listed
+
+Information about environment:
+
+  Written in vim and tested with byebug on the command line i.e.
+
+  byebug calc_slscp.rb
+
+Other than that, all development was on the command line and/or experimenting with Ruby hashes
+using irb.
