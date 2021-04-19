@@ -1,0 +1,23 @@
+Basic usage is as follows:
+
+  ruby calc_slscp.rb
+
+To save STDOUT to a CSV, simply type:
+
+  ruby calc_slscp.rb > results.csv
+
+The program can optionally take two arguments, a zip code file and a health care plan file:
+
+  ruby calc_slscp.rb zip_codes.csv plan_rates.csv > results.csv
+
+This is also how the tests are run, with the very basic examples in test_zips.csv and test_plans.csv:
+
+  ruby calc_slscp.rb test_zips.csv test_plans.csv > test_results.csv
+
+The only result should be for zip 12345 of rate 200.
+
+The others should fail for the following:
+
+  23456: Ambiguous plan areas (covers 1 and 2 in test_zips.csv)
+  34567: Only Bronze plan listed
+  45678: Only one Silver plan listed
