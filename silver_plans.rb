@@ -1,10 +1,10 @@
 class SilverPlans
-  def initialize(plans)
+  def initialize(plans:)
     @plans = plans
     @silver_plans = {}
   end
 
-  def to_hash
+  def to_h
     @plans.each do |plan|
       metal_level = plan["metal_level"]
       rate_area = plan["rate_area"]
